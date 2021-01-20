@@ -29,6 +29,6 @@ i.e. going off the top of the map puts you back on the bottom.
 I ran out of time for all these map types so I have treated the map as an unbounded
 plain for now.  
 
-settings.py contains the settings used such as map type, directions and commands.
+*settings.py* contains the settings used such as map type, directions and commands.
 This enables these to be changed in the future more easily
 
