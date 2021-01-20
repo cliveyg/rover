@@ -1,0 +1,18 @@
+# Ignore everything in the root
+/vrover/*
+/.pytest_cache/
+/__pycache__/
+.coverage
+/*.pyc
+# Un-ignore these files - it's bit of a clonky way to do it but it's more secure
+!requirements.txt
+!README.md
+!rover/__init__.py
+!rover/map.py
+!rover/rover.py
+!rover/settings.py
+!tests/test_map_creation.py
+!tests/test_rover_creation.py
+!tests/test_rover_movements.py
+!tests/test_valid_commands.py
+!rover/main.py
