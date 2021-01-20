@@ -4,11 +4,11 @@ Mars Rover:
 Python Version: Python 3.8.2
 Mars Rover: Version: 1.2, Last updated: 2020-10-26
 
-##Pre-requisites:
+## Pre-requisites:
 
 Python 3.8 or higher
 
-##Instructions:
+## Instructions:
 
 * Download repo from github with 'git clone git@github.com:cliveyg/rover'
 * Go to repo root.
@@ -19,7 +19,7 @@ Python 3.8 or higher
 * To run tests from main directory use command 'pytest --cov=rover tests/'
 * Run cmd 'python rover/main.py' for interactive session and follow instructions
 
-#Notes:
+# Notes:
 
 Originally I was going to have various map types (hence a separate map class) as it 
 wasn't clear from the spec if the place where the rover lands is an unbounded plain,
