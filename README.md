@@ -11,14 +11,14 @@ Python 3.8 or higher
 
 ## Instructions:
 
-* Download repo from github with 'git clone git@github.com:cliveyg/rover'
+* Download repo from github with `git clone git@github.com:cliveyg/rover`
 * Go to repo root.
-* Create a virtual environment using 'python -m venv <name>
-* Use virtual environment with 'source <name>/bin/activate
-* Run command to install needed modules: 'pip install -r requirements.txt'
+* Create a virtual environment using `python -m venv <name>`
+* Use virtual environment with `source <name>/bin/activate`
+* Run command to install needed modules: `pip install -r requirements.txt`
 * Remember to set PYTHONPATH to repo root path if needed
-* To run tests from main directory use command 'pytest --cov=rover tests/'
-* Run cmd 'python rover/main.py' for interactive session and follow instructions
+* To run tests from main directory use command `pytest --cov=rover tests/`
+* Run cmd `python rover/main.py` for interactive session and follow instructions
 
 ## Notes:
 
