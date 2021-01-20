@@ -29,24 +29,24 @@ def main():
                 except Exception as e:
                     print(e)
                     print("Try again\n")
-
-                print("Rover is currently at co-ordinates: "+ 
-                       rover.show_current_position())
-
-                print("Please enter a list of commands. Valid commands are " \
-                      "L R B F for left, right, back and forward")
-
-                while True:
-                    commands = input("Enter commands with no spaces: ")
-                    try:
-                        rover.move(commands)
-                    except Exception as e:
-                        print(e)
-                        print("Try again\n")
-
+                else:
                     print("Rover is currently at co-ordinates: "+ 
                            rover.show_current_position())
-                    print("Enter some more commands:\n")
+
+                    print("Please enter a list of commands. Valid commands are " \
+                          "L R B F for left, right, back and forward")
+
+                    while True:
+                        commands = input("Enter commands with no spaces: ")
+                        try:
+                            rover.move(commands)
+                        except Exception as e:
+                            print(e)
+                            print("Try again\n")
+                        else:
+                            print("Rover is currently at co-ordinates: "+ 
+                                  rover.show_current_position())
+                            print("Enter some more commands:\n")
     
 
 if __name__ == '__main__':
