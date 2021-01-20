@@ -39,4 +39,3 @@ class Map():
             if size < 3:
                 raise Exception("map size must be at least 3x3")
             self.size = size
-

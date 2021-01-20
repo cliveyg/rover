@@ -3,12 +3,13 @@ import sys
 from rover import Rover
 from map import Map
 
+
 def test_current_position():
 
     validMap = Map("unbounded", None)
     test_rover = Rover(10, 10, "north", validMap)
 
-    assert test_rover.show_current_position() == "(10, 10) NORTH" 
+    assert test_rover.show_current_position() == "(10, 10) NORTH"
 
 
 def test_orientations():
@@ -78,9 +79,7 @@ def test_negative_coordinates():
 
     assert test_rover.show_current_position() == "(-1, -1) WEST"
 
-
     commands = "RFF"
     test_rover.move(commands)
 
     assert test_rover.show_current_position() == "(-1, 1) NORTH"
-

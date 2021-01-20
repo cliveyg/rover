@@ -3,12 +3,13 @@ import os
 from map import Map
 from rover import Rover
 
+
 def main():
 
-    print("Input x y D where x and y are integers and D is north, south, " \
+    print("Input x y D where x and y are integers and D is north, south, "
           "east or west\n")
     while True:
-        input_vars = input("Please enter rovers initial co-ordinates in " \
+        input_vars = input("Please enter rovers initial co-ordinates in "
                            "the format x y D: ")
 
         input_array = input_vars.split()
@@ -18,9 +19,9 @@ def main():
             try:
                 x = int(input_array[0])
                 y = int(input_array[1])
-            except:
+            except Exception:
                 print("x and/or y are not valid integers")
-                print("Try again\n") 
+                print("Try again\n")
             else:
                 try:
                     default_map = Map("unbounded", None)
@@ -30,11 +31,11 @@ def main():
                     print(e)
                     print("Try again\n")
                 else:
-                    print("Rover is currently at co-ordinates: "+ 
-                           rover.show_current_position())
+                    print("Rover is currently at co-ordinates: " +
+                          rover.show_current_position())
 
-                    print("Please enter a list of commands. Valid commands are " \
-                          "L R B F for left, right, back and forward")
+                    print("Please enter a list of commands. Valid commands "
+                          "are L R B F for left, right, back and forward")
 
                     while True:
                         commands = input("Enter commands with no spaces: ")
@@ -44,10 +45,10 @@ def main():
                             print(e)
                             print("Try again\n")
                         else:
-                            print("Rover is currently at co-ordinates: "+ 
+                            print("Rover is currently at co-ordinates: " +
                                   rover.show_current_position())
                             print("Enter some more commands:\n")
-    
+
 
 if __name__ == '__main__':
-	main()
+    main()
