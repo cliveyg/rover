@@ -2,6 +2,7 @@ Mars Rover:
 ----------
 
 Python Version: Python 3.8.2
+
 Mars Rover: Version: 1.2, Last updated: 2020-10-26
 
 ## Pre-requisites:
